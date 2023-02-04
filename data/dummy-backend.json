@@ -1,0 +1,22 @@
+{
+	"girls": [
+		{
+			"id": "g1",
+			"title": "Madison Hu",
+			"description": "This is Madison",
+			"image": "/1697230_full.jpg"
+		},
+		{
+			"id": "g2",
+			"title": "Olivia Rodrigo",
+			"description": "This is Olivia",
+			"image": "/olivia_rodrigo_0.jpeg"
+		},
+		{
+			"id": "g3",
+			"title": "Jenna Ortega",
+			"description": "This is Jenna",
+			"image": "/Screen-Shot-2021-05-19-at-10.31.23-AM.webp"
+		}
+	]
+}
