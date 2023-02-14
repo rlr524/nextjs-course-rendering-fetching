@@ -9,12 +9,12 @@ const HomePage = (props) => {
 		<ul>
 			{girls.map((girl) => (
 				<div key={girl.id}>
-					<li>
+					<div>
 						{girl.title} - {girl.description}
-					</li>
+					</div>
 					<Image
-						width={400}
-						height={400}
+						width={750}
+						height={750}
 						src={girl.image}
 						alt={`Image of ${girl.title}`}
 					/>
