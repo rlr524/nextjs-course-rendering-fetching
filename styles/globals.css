@@ -16,3 +16,14 @@ h5,
 h6 {
 	font-family: "Lato", sans-serif;
 }
+
+.image-container {
+	width: 33%;
+}
+
+.image {
+	object-fit: contain;
+	width: 100%;
+	position: relative;
+	height: unset;
+}

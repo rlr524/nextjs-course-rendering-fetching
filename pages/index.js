@@ -12,12 +12,18 @@ const HomePage = (props) => {
 					<div>
 						{girl.title} - {girl.description}
 					</div>
-					<Image
-						width={750}
-						height={750}
-						src={girl.image}
-						alt={`Image of ${girl.title}`}
-					/>
+					<div class="image-container">
+						<Image
+							width={500}
+							height={500}
+							className={"image"}
+							sizes="(max-width: 750px) 33vw,
+									(max-width: 400px) 25vw,
+									20vw"
+							src={girl.image}
+							alt={`Image of ${girl.title}`}
+						/>
+					</div>
 				</div>
 			))}
 		</ul>
@@ -41,6 +47,10 @@ export async function getStaticProps() {
 		props: {
 			girls: data.girls,
 		},
+		// The time, in n seconds, that NextJS waits before regerating the page (ISR - For every incoming request to
+		// the page, it should be regenerated unless it was less than n seconds since it was last regenerated.). This
+		// setting applies only to production builds.
+		revalidate: 600,
 	};
 }
 
